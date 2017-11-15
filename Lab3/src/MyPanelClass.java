@@ -46,7 +46,32 @@ public class MyPanelClass extends JPanel {
 //        p.addPoint(x1 + 15, y1 + 25);
 //        g.setColor(Color.YELLOW);
 //        g.fillPolygon(p);
-        
+      
+		g.setColor(Color.white);
+		g.fillRect(x1, y1, width + 1, height + 1);
+		
+		g.setColor(Color.red);
+		g.fillRect(x1+10, y1+10, width,30);
+
+		   g.setColor(Color.RED);
+
+		   g.fillRect(x1+10, y1+70, width,30);
+
+		   g.setColor(Color.RED);
+
+		   g.fillRect(x1+10, y1+130, width,30);
+		
+		
+		g.setColor(Color.BLUE);
+		Polygon p1=new Polygon();
+		p1.addPoint(x1+10,y1+10);
+		p1.addPoint(x1+115,y1+150/2);
+		p1.addPoint(x1+10,y1+150);
+		g.fillPolygon(p1);
+		
+				
+		
+		
         Polygon p2 = new Polygon();
         p2.addPoint(x1 + 25, y1 + 73);
         p2.addPoint(x1 + 41, y1 + 73);
